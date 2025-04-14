@@ -97,7 +97,7 @@ body {
 .box{
   border-radius: var(--border-radius-s);
   width: 15.5rem;
-  padding: 10px 16px;
+  padding: 10px 1rem;
 }
 .box-loan{
   background-color: purple;
@@ -139,67 +139,14 @@ body {
 }
 .box-deadlines{
   background-color: rgb(89, 89, 89);
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .dollar-images-group{
   position: relative;
   top: 92px;
 }
-@media screen and (min-width: 768px) {
-  .box{
-    border-radius: var(--border-radius-m);
-    min-width: 19.6875rem;
-  }
-  .box-loan{
-    height: 10rem;
-    grid-column: 2/3;
-  }
-  .box-revolut{
-    grid-column: 1/3;
-    grid-row: 2/4;
-    height: 21.1875rem;
-    width: auto;
-  }
-  .box-commission{
-    height: 10rem;
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-  .box-millions{
-    grid-row: 4/6;
-    height: auto;
-  }
-  .box-tae{
-    height: 10rem;
-  }
-  .box-security{
-    height: 10rem;
-  }
-  .box-reader{
-    grid-row: 6/8;
-    height: 22.5rem;
-  }
-  .box-age{
-    background-color: #CA3685;
-    height: 21.1875rem;
-    grid-column: 1/2;
-    grid-row: 6/8;
-  }
-  .box-deadlines{
-    grid-column: 1/3;
-    grid-row: 8/9;
-    width: auto;
-    height: 10rem;
-  }
-  .dollar-images-group{
-    position: relative;
-    top: 13px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  
-}
-
 /* ALINEAMIENTO */
 .position-horizontal{
   display: flex;
@@ -222,10 +169,115 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .box{
+    border-radius: var(--border-radius-m);
+    min-width: 19.6875rem;
+    padding: 1.5rem 1.75rem;
+  }
+  .box-loan{
+    height: 10rem;
+    grid-column: 2/3;
+  }
+  .box-revolut{
+    grid-column: 1/3;
+    grid-row: 2/4;
+    height: 21.1875rem;
+    width: auto;
+  }
+  .box-commission{
+    height: 10rem;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .box-millions{
+    grid-row: 4/6;
+    height: 22.5rem;
+  }
+  .box-tae{
+    height: 10rem;
+  }
+  .box-security{
+    height: 10rem;
+  }
+  .box-reader{
+    grid-row: 6/8;
+    height: 22.5rem;
+  }
+  .box-age{
+    background-color: #CA3685;
+    height: 21.1875rem;
+    grid-column: 1/2;
+    grid-row: 6/8;
+    flex-direction: column-reverse;
+  }
+  .box-deadlines{
+    grid-column: 1/3;
+    grid-row: 8/9;
+    width: auto;
+    height: 10rem;
+  }
+  .dollar-images-group{
+    position: relative;
+    top: 13px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .container{
     display: grid;
     grid-template-columns: repeat(2, 19.6875rem);
     grid-template-rows: repeat(8, 10rem);
     gap: 1.25rem;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container{
+    grid-template-columns: repeat(4, 24.3125rem);
+    grid-template-rows: repeat(5, 11rem);
+  }
+  .box-loan{
+    height: 10rem;
+  }
+  .box-revolut{
+    grid-column: 2/3;
+    grid-row: 2/5;
+    height: 21.1875rem;
+    width: 49.75rem;
+    height: 35.5rem;
+  }
+  .box-commission{
+    height: 10rem;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .box-millions{
+    grid-column: 1/2;
+    grid-row: 1/4;
+    height: 35.5rem;
+    width: 24.25rem;
+  }
+  .box-tae{
+    height: 10rem;
+  }
+  .box-security{
+    height: 10rem;
+  }
+  .box-reader{
+    grid-row: 6/8;
+    height: 22.5rem;
+  }
+  .box-age{
+    background-color: #CA3685;
+    height: 21.1875rem;
+    grid-column: 1/2;
+    grid-row: 6/8;
+    flex-direction: column-reverse;
+  }
+  .box-deadlines{
+    grid-column: 1/3;
+    grid-row: 8/9;
+    width: auto;
+    height: 10rem;
   }
 }
