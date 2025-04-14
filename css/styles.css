@@ -1,3 +1,8 @@
+:root{
+  --border-radius-s: 0.5rem;
+  --border-radius-m: 1rem;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -21,4 +26,206 @@ nav ul {
 body {
   margin: 0;
   font-family: sans-serif;
+  background-color: #1B1A1A;
+  color: #FFFFFF;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+/* TEXTOS */
+.text{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: italic;
+  margin: 0;
+}
+.title{
+  font-size: 1.25rem;
+}
+.text-s{
+  font-size: 0.625rem;
+}
+.text-m{
+  font-size: 0.75rem;
+}
+.text-l{
+  font-size: 1rem;
+}
+.text-remark{
+  background-color: #1D0C14;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius-s);
+  max-width: 9rem;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+@media screen and (min-width: 768px) {
+  .title{
+    font-size: 3rem;
+  }
+  .text-l{
+    font-size: 2rem;
+  }
+  .text-m{
+    font-size: 1.5rem;
+  }
+  .text-s{
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title{
+    font-size: 5.5rem;
+  }
+  .text-l{
+    font-size: 2.5rem;
+  }
+  .text-s{
+    font-size: 1.5rem;
+  }
+}
+
+/* CAJAS */
+.box{
+  border-radius: var(--border-radius-s);
+  width: 15.5rem;
+  padding: 10px 16px;
+}
+.box-loan{
+  background-color: purple;
+  height: 4.5625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-revolut{
+  background-image: linear-gradient(70deg, #EC116D, rgba(89, 92, 199, 0.8), #13257B);
+  height: 10.1875rem;
+}
+.box-commission{
+  background-color: #445599;
+  height: 4.5625rem;
+}
+.box-millions{
+  background-color: #7B6A9C;
+  height: 15.75rem;
+}
+.box-tae{
+  background-color: #DF849C;
+  height: 4.5625rem;
+}
+.box-security{
+  background-color: #46377A;
+  height: 4.5625rem;
+}
+.box-reader{
+  background-color: #1D0C14;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box-age{
+  background-color: #CA3685;
+  height: 4.5625rem;
+}
+.box-deadlines{
+  background-color: rgb(89, 89, 89);
+  text-align: center;
+}
+.dollar-images-group{
+  position: relative;
+  top: 92px;
+}
+@media screen and (min-width: 768px) {
+  .box{
+    border-radius: var(--border-radius-m);
+    min-width: 19.6875rem;
+  }
+  .box-loan{
+    height: 10rem;
+    grid-column: 2/3;
+  }
+  .box-revolut{
+    grid-column: 1/3;
+    grid-row: 2/4;
+    height: 21.1875rem;
+    width: auto;
+  }
+  .box-commission{
+    height: 10rem;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .box-millions{
+    grid-row: 4/6;
+    height: auto;
+  }
+  .box-tae{
+    height: 10rem;
+  }
+  .box-security{
+    height: 10rem;
+  }
+  .box-reader{
+    grid-row: 6/8;
+    height: 22.5rem;
+  }
+  .box-age{
+    background-color: #CA3685;
+    height: 21.1875rem;
+    grid-column: 1/2;
+    grid-row: 6/8;
+  }
+  .box-deadlines{
+    grid-column: 1/3;
+    grid-row: 8/9;
+    width: auto;
+    height: 10rem;
+  }
+  .dollar-images-group{
+    position: relative;
+    top: 13px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  
+}
+
+/* ALINEAMIENTO */
+.position-horizontal{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.position-mixed{
+  display: flex;
+  justify-content: space-between;
+}
+.position-vertical{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.revolut-image{
+  position: relative;
+  top: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container{
+    display: grid;
+    grid-template-columns: repeat(2, 19.6875rem);
+    grid-template-rows: repeat(8, 10rem);
+    gap: 1.25rem;
+  }
 }

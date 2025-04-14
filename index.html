@@ -3,10 +3,98 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Grid</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <main>
+      <section class="container">
+        <div class="box box-loan">
+          <span class="text text-m">Préstamo de hasta 30.000$</span>
+        </div>
+        <div class="box box-revolut position-mixed">
+          <span class="title text">Revolut</span>
+          <picture class="revolut-image">
+            <source media="(min-width: 1200px)" srcset="./assets/assets/desktop/contactless-payment 1.svg">
+            <source media="(min-width: 765px)" srcset="./assets/assets/tablet/contactless-payment 1.svg">
+            <source media="(min-width: 360px)" srcset="./assets/assets/mobile/contactless-payment 1.svg">
+            <img src="./assets/assets/mobile/contactless-payment 1.svg" alt="">
+          </picture>
+        </div>
+        <div class="box box-commission position-horizontal">
+          <span class="text text-m">Invierte con un 0% de comisión</span>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./assets/assets/desktop/hand-coin-line.svg">
+            <source media="(min-width: 765px)" srcset="./assets/assets/tablet/hand-coin-line.svg">
+            <source media="(min-width: 360px)" srcset="./assets/assets/mobile/hand-coin-line.svg">
+            <img src="./assets/assets/mobile/hand-coin-line.svg" alt="">
+          </picture>
+        </div>
+        <div class="box box-millions position-vertical">
+          <p class="text text-l">ÚNETE A LOS MÁS DE</p>
+          <p class="text-remark text text-l">50 MILLONES</p>
+          <p class="text text-l">QUE UTILIZAN REVOLUT</p>
+          <section class="dollar-images-group position-horizontal">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./assets/assets/desktop/dollar-medium.png">
+              <source media="(min-width: 765px)" srcset="./assets/assets/tablet/dollar-medium.png">
+              <source media="(min-width: 360px)" srcset="./assets/assets/mobile/dollar-medium.png">
+              <img src="./assets/assets/mobile/dollar-medium.png" alt="">
+            </picture>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./assets/assets/desktop/dollar-small.png">
+              <source media="(min-width: 765px)" srcset="./assets/assets/tablet/dollar-small.png">
+              <source media="(min-width: 360px)" srcset="./assets/assets/mobile/dollar-small.png">
+              <img src="./assets/assets/mobile/dollar-small.png" alt="">
+            </picture>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./assets/assets/desktop/dollar-big.png">
+              <source media="(min-width: 765px)" srcset="./assets/assets/tablet/dollar-big.png">
+              <source media="(min-width: 360px)" srcset="./assets/assets/mobile/dollar-big.png">
+              <img src="./assets/assets/mobile/dollar-big.png" alt="">
+            </picture>
+          </section>
+        </div>
+        <div class="box box-tae position-vertical">
+          <span class="text-m text">Haz crecer tu dinero con un</span>
+          <span class="text text-s text-remark">3,04% TAE</span>
+        </div>
+        <div class="box box-security position-horizontal">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./assets/assets/desktop/secure-payment-line.svg">
+            <source media="(min-width: 765px)" srcset="./assets/assets/tablet/secure-payment-line.svg">
+            <source media="(min-width: 360px)" srcset="./assets/assets/mobile/secure-payment-line.svg">
+            <img src="./assets/assets/mobile/secure-payment-line.svg" alt="">
+          </picture>
+          <span class="text-m text">Seguridad Financiera con Revolut Secure</span>
+        </div>
+        <div class="box box-reader position-vertical">
+          <span class="text text-m">REVOLUT READER PARA EMPRESAS</span>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./assets/assets/desktop/reader.png">
+            <source media="(min-width: 765px)" srcset="./assets/assets/tablet/reader.png">
+            <source media="(min-width: 360px)" srcset="./assets/assets/mobile/reader.png">
+            <img src="./assets/assets/mobile/reader.png" alt="">
+          </picture>
+        </div>
+        <div class="box box-age position-horizontal">
+          <span class="text text-m">Cuenta <18 con control parental</span>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./assets/assets/desktop/people-icon.svg">
+            <source media="(min-width: 765px)" srcset="./assets/assets/tablet/people-icon.svg">
+            <source media="(min-width: 360px)" srcset="./assets/assets/mobile/people-icon.svg">
+            <img src="./assets/assets/mobile/people-icon.svg" alt="">
+          </picture>
+        </div>
+        <div class="box box-deadlines position-vertical">
+          <div class="text text-m">PAGA EN 3 PLAZOS CON PAY LATER</div>
+          <div class="text text-s">Elige el plan que mejor se adpata a ti</div>
+        </div>
+      </section>
+    </main>
     <script src="./js/scripts.js"></script>
   </body>
 </html>
